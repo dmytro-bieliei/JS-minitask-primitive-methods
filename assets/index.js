@@ -11,24 +11,21 @@ const taskString3 = ' Lorem ipsum dolor sit amet consectetur adipisicing elit Re
 
 function wordCounter(string) {
   const wordsArr = string.split(' ');
-  console.log(wordsArr);
+  // console.log(wordsArr);
   const arrayLenght = wordsArr.length;
   return arrayLenght + ' words in this string';
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // Функция, которая получает строку и возвращает размер самого большого слова в ней
+
+function longestWordFind(string) {
+  const wordsArr = string.split(' ');
+  // console.log(wordsArr);
+  let longestWord = wordsArr[0];
+  for (i = 0; i < wordsArr.length; i++) {
+    if (longestWord.length < wordsArr[i].length) {
+      longestWord = wordsArr[i];
+    }
+  }
+  return longestWord.length;
+};
