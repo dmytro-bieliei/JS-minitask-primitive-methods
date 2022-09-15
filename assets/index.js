@@ -7,7 +7,7 @@
 
 const taskString = 'Lorem ipsum dolor sit amet consectetur adipisicing elit Perferendis unde';
 const taskString2 = 'Yellow, orange, green, blue'
-const taskString3 = ' Lorem ipsum dolor sit amet consectetur adipisicing elit Recusandae consequatur doloribus Laudantium a iusto necessitatibus totam Quas aut debitis Aperiam illum similique eos mollitia eius accusantium sint voluptatum nesciunt Nobis illum rerum iure nemo tenetur Corporis ad vero delectus cupiditate reiciendis nihil labore Voluptatum quod similique'
+const taskString3 = 'Lorem ipsum dolor sit amet consectetur adipisicing elit Recusandae consequatur doloribus Laudantium a iusto necessitatibus totam Quas aut debitis Aperiam illum similique eos mollitia eius accusantium sint voluptatum nesciunt Nobis illum rerum iure nemo tenetur Corporis ad vero delectus cupiditate reiciendis nihil labore Voluptatum quod similique'
 
 function wordCounter(string) {
   const wordsArr = string.split(' ');
@@ -27,5 +27,5 @@ function longestWordFind(string) {
       longestWord = wordsArr[i];
     }
   }
-  return longestWord.length;
+  return longestWord.length + ' letters in the longest word';
 };
